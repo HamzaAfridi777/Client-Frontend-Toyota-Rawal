@@ -1,0 +1,28 @@
+.menu-button {
+    display: none; /* Hide by default */
+    background: red; /* Temporary background color for debugging */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Temporary text color for debugging */
+    position: fixed; /* Ensure it's always visible on the screen */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block; /* Show on small screens */
+    }
+  
+    .menu {
+      display: none; /* Hide menu by default on small screens */
+      flex-direction: column;
+    }
+  
+    .menu.show {
+      display: block; /* Show menu when isMenuOpen is true */
+    }
+  }
+  

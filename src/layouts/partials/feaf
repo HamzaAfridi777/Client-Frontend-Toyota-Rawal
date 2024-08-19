@@ -1,0 +1,121 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" id="newstyle-css" href="https://www.toyota-indus.com/wp-content/themes/toyotaindus/css/bootstrap.min.css?ver=5.8.1" media="all">
+    <title>React App</title>
+    <script defer="defer" src="/static/js/main.df4e8971.js"></script>
+    <link href="/static/css/main.5b1d65ac.css" rel="stylesheet">
+  <style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-regular.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_medium_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script type="text/javascript" src="https://www.toyota-indus.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://www.toyota-indus.com/wp-content/themes/toyotaindus/js/bootstrap.min.js?ver=5.8.1" id="jquery_bootstrap-js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      function submitForm() {
+        document.getElementById("contact-form1");
+        const e = document.getElementById("successMessage");
+        (e.style.display = "block"),
+          setTimeout(function () {
+            e.style.opacity = "1";
+          }, 100),
+          setTimeout(function () {
+            e.style.opacity = "0";
+          }, 5e3);
+      }
+      function toggleFields() {
+        "Suggestion" === $("#play_type").val()
+          ? $("#Suggestions").show()
+          : $("#Suggestions").hide(),
+          "Inquiry" === $("#play_type").val()
+            ? $("#Inquirys").show()
+            : $("#Inquirys").hide(),
+          "GeneralQuires" === $("#play_type").val()
+            ? $("#General").show()
+            : $("#General").hide(),
+          "History" === $("#play_type").val()
+            ? $("#History-1").show()
+            : $("#History-1").hide(),
+          "Custom" === $("#play_type").val()
+            ? $("#Custom-1").show()
+            : $("#Custom-1").hide();
+      }
+      $(document).ready(function () {
+        $(document).on("submit", "#contact-form1", function (e) {
+          return "" == $("#name").val() ||
+            "" == $("#email").val() ||
+            "" == $("#query_type").val() ||
+            "" == $("#phone").val() ||
+            "" == $("#message").val()
+            ? (e.preventDefault(), alert("Fill all fields first"), !1)
+            : "" === $("#g-recaptcha-response").val()
+            ? (e.preventDefault(), alert("Please check the recaptcha"), !1)
+            : void $("#contact-form1").submit();
+        });
+      }),
+        $(document).ready(function () {
+          toggleFields(),
+            $("#play_type").change(function () {
+              toggleFields();
+            });
+        });
+    </script>
+    <script>
+      document
+        .getElementById("copyright")
+        .appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
+  
+<div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div></body></html>
